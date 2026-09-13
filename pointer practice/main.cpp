@@ -85,8 +85,23 @@ int main() {
      */
     
     
+    char str[] = "pointer";
     
+    char* ptr = str;
     
+    while (*ptr != '0') {
+        ptr++;
+    }
+    
+    ptr--;
+    
+    while (ptr >= str) {
+        cout << *ptr;
+        ptr--;
+        
+    }
+    
+    cout << endl;
     
     
     return EXIT_SUCCESS;
