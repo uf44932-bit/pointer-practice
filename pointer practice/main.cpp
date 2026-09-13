@@ -84,12 +84,13 @@ int main() {
      Create a C-style string which is an array of chars. Then, create a pointer that points to the start of the array. Move the pointer through the string until you reach the null character \0, like in the previous exercise. However, now that you are at the end of the string, reverse direction and go backwards back to the beginning, printing each character to the console.
      */
     
-    
+  /*
     char str[] = "pointer";
     
     char* ptr = str;
+    */
     
-    while (*ptr != '0') {
+    while (*ptr != '\0') {
         ptr++;
     }
     
