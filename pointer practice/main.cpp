@@ -8,6 +8,7 @@ using namespace std;
 
 int main() {
   
+    
     //Two Integers
     /*
      Write a program that asks the user to enter two integers to be stored in the variables a and b. Assign the addresses of a and b to ptr_a and ptr_b. Then, print out the dereferenced values of ptr_a and ptr_b to the console.
@@ -27,6 +28,7 @@ int main() {
     
     cout << *ptr_a << endl;
     cout << *ptr_b << endl;
+    
     
     
     // Maximum Arrays
@@ -51,12 +53,41 @@ int main() {
     cout << "The Maximum is: " << *max_ptr << endl;
     
     
+    
     //length of a c-style string
     /*
      Write a program to calculate the length of a string using a pointer.
 
      Create a C-style string which is an array of chars. Then, create a pointer that points to the start of the array. Move the pointer through the string until you reach the null character \0, and then print out how many cells it visited.
      */
+    
+    
+    char str[] = "pointer";
+    
+    char* ptr = str;
+    int length = 0;
+    
+    while (*ptr !=  '\0') {
+        length++;
+        ptr++;
+    }
+    
+    cout << "The length is: " << length <<endl;
+    
+    
+    
+    
+    //reverse a c-style string
+    /*
+     Write a program that prints a C-style string in reverse using a pointer.
+
+     Create a C-style string which is an array of chars. Then, create a pointer that points to the start of the array. Move the pointer through the string until you reach the null character \0, like in the previous exercise. However, now that you are at the end of the string, reverse direction and go backwards back to the beginning, printing each character to the console.
+     */
+    
+    
+    
+    
+    
     
     return EXIT_SUCCESS;
 }
