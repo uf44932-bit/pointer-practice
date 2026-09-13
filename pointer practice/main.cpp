@@ -105,5 +105,39 @@ int main() {
     cout << endl;
     
     
+
+    //midpoint in a vector
+    /*
+     Write a program to determine the midpoint value of a vector.
+
+     Create a vector of integers (vector<int>) that contains some number of random, unsorted values. You might make the values up yourself or use rand(). Then, create two pointers - one that points to the beginning of the vector and the other that points to the end. Move the pointers towards each other, step by step, until they meet at the midpoint. Then, return the value of the index where they meet.
+
+     If they pass each other without meeting (i.e. there are an even number of elements in the vector), return the value of the smaller index, right before where the midpoint would be.
+     */
+    
+    
+    vector<int> numbers = {10, 11, 12, 13, 14};
+    
+    int* start = &numbers[0];
+    int* end = &numbers[numbers.size() - 1];
+    
+    while (start < end) {
+        if (start + 1 == end) {
+            
+            
+            break;
+            
+        }
+        
+        start++;
+        end--;
+    }
+    
+    cout << "the midpiont is: " << *start << endl;
+    
+    
+    
+    
+    
     return EXIT_SUCCESS;
 }
